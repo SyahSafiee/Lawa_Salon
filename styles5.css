@@ -1,0 +1,171 @@
+/* General Styles */
+body {
+    background-image: url('image/background.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    padding: 10px 0;
+    background-color: black;
+}
+
+.header img {
+    max-width: 100%;
+    height: auto;
+}
+
+.top-bar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.top-bar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-bar nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.top-bar nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Orders and Reservations Container */
+#carts, #reservations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.order-item, .reservation-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.order-item img, .reservation-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    max-width: 100%;
+    max-height: 400px; /* Limit image height for consistency */
+}
+
+.order-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.order-item p, .reservation-item p {
+    color: #0c0c0c;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #f44336; /* Red for cancel button */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+/* Styles for the account settings section */
+.settings-section {
+    margin-bottom: 2em;
+    text-align: center; 
+}
+
+.settings-section a.btn {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.settings-section a.btn:hover {
+    background-color: #555;
+}
+
+/* Specific styles for the update password form */
+#update-password-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#update-password-form h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+#update-password-form form div {
+    display: flex;
+    flex-direction: column;
+}
+
+#update-password-form form input[type="password"] {
+    margin-bottom: 1em;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
